@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan De Souza — Portfolio</title>
+
+  <!-- SEO + Social Sharing -->
+  <meta name="description" content="Ethan De Souza — Creative Designer & Developer. Crafting clean brands and smooth web experiences.">
+  <meta property="og:title" content="Ethan De Souza — Portfolio">
+  <meta property="og:description" content="Creative Designer & Developer. Crafting clean brands and smooth web experiences.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1529336953121-a0ce8d8d6af9?q=80&w=1200">
+  <meta property="og:url" content="https://ethandesouza.org">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS (scroll animations) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#hero">Ethan.</a>
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Creative Designer & Developer</h1>
+      <p class="hero-sub">Crafting clean brands and smooth web experiences.</p>
+      <a href="#projects" class="btn btn-primary">View Work</a>
+      <div class="scroll-hint">Scroll</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-aos="fade-right">Selected Works</h2>
+        <p data-aos="fade-left" class="muted">A mix of branding, web, and motion.</p>
+      </div>
+
+      <div class="grid">
+        <!-- Example project cards -->
+        <a class="card" href="#" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1529336953121-a0ce8d8d6af9?q=80&w=1600&auto=format&fit=crop" alt="Brand Identity">
+          </div>
+          <div class="card-meta">
+            <h3>Brand Identity</h3>
+            <span>Logo, Styleguide</span>
+          </div>
+        </a>
+        <!-- (other cards unchanged) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container about-wrap">
+      <div class="about-text" data-aos="fade-right">
+        <h2>About</h2>
+        <p>I’m Ethan, a multidisciplinary creative focused on branding and digital experiences. I help startups and teams tell a crisp visual story through identity, motion, and code.</p>
+        <p class="muted">Currently available for freelance and collaborations.</p>
+
+        <!-- ✅ Added your website link -->
+        <a href="https://ethandesouza.org" target="_blank" class="btn btn-ghost">
+          Visit My Website
+        </a>
+      </div>
+
+      <div class="about-cards">
+        <div class="stat" data-aos="zoom-in" data-aos-delay="0">
+          <strong>5+</strong>
+          <span>Years creating</span>
+        </div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="100">
+          <strong>30+</strong>
+          <span>Projects shipped</span>
+        </div>
+        <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+          <strong>10</strong>
+          <span>Happy clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-inner" data-aos="fade-up">
+      <h2>Let’s build something.</h2>
+      <p class="muted">Email me and I’ll get back within a day.</p>
+      <div class="cta-row">
+        <a href="mailto:youremail@example.com" class="btn btn-primary">Say Hello</a>
+        <a href="#projects" class="btn btn-ghost">See Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container foot-inner">
+      <span>&copy; <span id="year"></span> Ethan De Souza</span>
+      <div class="socials">
+        <a href="https://instagram.com" aria-label="Instagram" target="_blank">IG</a>
+        <a href="https://dribbble.com" aria-label="Dribbble" target="_blank">DB</a>
+        <a href="https://github.com" aria-label="GitHub" target="_blank">GH</a>
+        <!-- ✅ Added your live website link -->
+        <a href="https://ethandesouza.org" aria-label="Portfolio" target="_blank">🌐 Website</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: AOS + GSAP + App -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
