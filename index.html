@@ -6,9 +6,9 @@
   <title>Ethan De Souza — Portfolio</title>
 
   <!-- SEO + Social Sharing -->
-  <meta name="description" content="Ethan Philip De Souza — Data Scientist and analytical expert. Crafting clean brands and smooth web experiences.">
-  <meta property="og:title" content="Ethan Philip De Souza — Portfolio and Experiences">
-  <meta property="og:description" content="Data Scientist and analytical expert. Crafting clean brands and smooth web experiences.">
+  <meta name="description" content="Ethan Philip De Souza — Data Analyst and Developer. Turning data into insights through analytics, visualization, and web development.">
+  <meta property="og:title" content="Ethan De Souza — Portfolio and Experiences">
+  <meta property="og:description" content="Data Analyst and Developer. Explore my work, experience, and website design journey.">
   <meta property="og:image" content="https://ethandesouza.org/IMG_2135.jpeg">
   <meta property="og:url" content="https://ethandesouza.org">
   <meta name="twitter:card" content="summary_large_image">
@@ -29,9 +29,10 @@
   <!-- NAVBAR -->
   <header class="navbar">
     <div class="nav-inner">
-      <a class="logo" href="#hero">Ethan.</a>
+      <a class="logo" href="#identity">Ethan.</a>
       <nav class="nav-links">
-        <a href="#projects">Projects</a>
+        <a href="#identity">Home</a>
+        <a href="#projects">Explore</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -41,67 +42,95 @@
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="hero" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <h1 class="hero-title">Creative Designer & Developer</h1>
-      <p class="hero-sub">Crafting clean brands and smooth web experiences.</p>
+  <!-- IDENTITY (MAIN INTRO SECTION) -->
+  <section id="identity" class="identity">
+    <div class="identity-overlay"></div>
+    <div class="container identity-content">
+      <h1 class="identity-title">Data Analyst & Developer</h1>
+      <p class="identity-sub">
+        Turning complex data into clear insights through analysis, visualization, and full-stack development.
+      </p>
       <a href="#projects" class="btn btn-primary">View Work</a>
-      <div class="scroll-hint">Scroll</div>
+      <div class="scroll-hint">EXPLORE ↓</div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- EXPLORE SECTION (About / Experience / Projects) -->
   <section id="projects" class="section projects">
     <div class="container">
       <div class="section-head">
-        <h2 data-aos="fade-right">Selected Works</h2>
-        <p data-aos="fade-left" class="muted">A mix of branding, web, and motion.</p>
+        <h2 data-aos="fade-right">Explore More</h2>
+        <p data-aos="fade-left" class="muted">Learn more about me, my experiences, and my projects.</p>
       </div>
 
       <div class="grid">
-        <!-- Example project cards -->
-        <a class="card" href="#" data-aos="fade-up" data-aos-delay="0">
+
+        <!-- ABOUT ME -->
+        <a class="card" href="about.html" data-aos="fade-up" data-aos-delay="0">
           <div class="card-media">
             <img src="IMG_2135.jpeg" alt="Ethan De Souza by the ocean">
           </div>
           <div class="card-meta">
-            <h3>Brand Identity</h3>
-            <span>Logo, Styleguide</span>
+            <h3>About Me</h3>
+            <span>Learn more about who I am, my background, and my journey in data analysis and development.</span>
           </div>
         </a>
-        <!-- (other cards unchanged or add more as needed) -->
+
+        <!-- EXPERIENCES -->
+        <a class="card" href="experience.html" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-media">
+            <img src="Picture1 copy.jpg" alt="Experience section preview">
+          </div>
+          <div class="card-meta">
+            <h3>Experiences</h3>
+            <span>Explore my academic and professional experiences — from analytics and web development to creative development.</span>
+          </div>
+        </a>
+
+        <!-- PROJECTS -->
+        <a class="card" href="projects.html" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-media">
+            <img src="Project.jpg" alt="Project preview">
+          </div>
+          <div class="card-meta">
+            <h3>Projects</h3>
+            <span>Discover my featured data projects, visualizations, and development work.</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT SECTION -->
   <section id="about" class="section about">
     <div class="container about-wrap">
       <div class="about-text" data-aos="fade-right">
         <h2>About</h2>
-        <p>I’m Ethan, a multidisciplinary creative focused on branding and digital experiences. I help startups and teams tell a crisp visual story through identity, motion, and code.</p>
-        <p class="muted">Currently available for freelance and collaborations.</p>
+        <p>
+          I’m Ethan, a Data Analyst and Developer passionate about uncovering insights from data and building innovative digital solutions.
+        </p>
+        <p class="muted">
+          Currently open to collaborations and analytical opportunities.
+        </p>
 
-        <!-- ✅ Website Link -->
-        <a href="https://ethandesouza.org" target="_blank" class="btn btn-ghost">
-          Visit My Website
+        <a href="mailto:youremail@example.com" target="_blank" class="btn btn-ghost">
+          Contact Me
         </a>
       </div>
 
       <div class="about-cards">
         <div class="stat" data-aos="zoom-in" data-aos-delay="0">
           <strong>5+</strong>
-          <span>Years creating</span>
+          <span>Years learning</span>
         </div>
         <div class="stat" data-aos="zoom-in" data-aos-delay="100">
-          <strong>30+</strong>
-          <span>Projects shipped</span>
+          <strong>10+</strong>
+          <span>Analytics projects</span>
         </div>
         <div class="stat" data-aos="zoom-in" data-aos-delay="200">
-          <strong>10</strong>
-          <span>Happy clients</span>
+          <strong>∞</strong>
+          <span>Curiosity</span>
         </div>
       </div>
     </div>
@@ -110,11 +139,13 @@
   <!-- CONTACT -->
   <section id="contact" class="section contact">
     <div class="container contact-inner" data-aos="fade-up">
-      <h2>Let’s build something.</h2>
-      <p class="muted">Email me and I’ll get back within a day.</p>
+      <h2>Let’s Collaborate</h2>
+      <p class="muted">
+        Have a project in mind or want to connect? Reach out — I’d love to chat.
+      </p>
       <div class="cta-row">
         <a href="mailto:youremail@example.com" class="btn btn-primary">Say Hello</a>
-        <a href="#projects" class="btn btn-ghost">See Work</a>
+        <a href="#projects" class="btn btn-ghost">See More</a>
       </div>
     </div>
   </section>
@@ -124,17 +155,20 @@
     <div class="container foot-inner">
       <span>&copy; <span id="year"></span> Ethan De Souza</span>
       <div class="socials">
-        <a href="https://instagram.com" aria-label="Instagram" target="_blank">IG</a>
-        <a href="https://dribbble.com" aria-label="Dribbble" target="_blank">DB</a>
-        <a href="https://github.com" aria-label="GitHub" target="_blank">GH</a>
-        <a href="https://ethandesouza.org" aria-label="Portfolio" target="_blank">🌐 Website</a>
+        <a href="https://instagram.com" target="_blank">IG</a>
+        <a href="https://github.com" target="_blank">GH</a>
+        <a href="https://ethandesouza.org" target="_blank">🌐 Website</a>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts: AOS + GSAP + App -->
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="script.js"></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experiences — Ethan De Souza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Ethan.</a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section experiences">
+    <div class="container">
+      <h1 data-aos="fade-right">Experiences</h1>
+      <div class="exp-list">
+        <div class="exp-item" data-aos="fade-up">
+          <h3>Analytics Assistant — Aiwellness</h3>
+          <p class="muted">June 2024 – Present</p>
+          <p>Worked on real-world analytics projects involving data visualization and performance dashboards using Python and Power BI.</p>
+        </div>
+
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="100">
+          <h3>Data Scientist/ Data Analyst — Tüv Süd</h3>
+          <p class="muted">Jun 2025 – July 2025</p>
+          <p>Developed a full-stack fitness and nutrition web application using Flask and React, featuring calorie tracking and AI-driven insights.</p>
+        </div>
+
+        <div class="exp-item" data-aos="fade-up" data-aos-delay="200">
+          <h3>Part time Waiter — Locahouz</h3>
+          <p class="muted">May 2022 – Jun 2022</p>
+          <p>Assisted in developing data models and predictive algorithms for research in health analytics and machine learning applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <span>&copy; <span id="year"></span> Ethan De Souza</span>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank">IG</a>
+        <a href="https://github.com" target="_blank">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

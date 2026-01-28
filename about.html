@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — Ethan De Souza</title>
+
+  <!-- Fonts + AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Page-Specific Styles -->
+  <style>
+    /* TIMELINE GALLERY */
+    .about-page .timeline-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .about-page .timeline-gallery img {
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 3px solid #8fb3d9;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .about-page .timeline-gallery img:hover {
+      transform: scale(1.05);
+      border-color: #7aa7d4;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    /* ABOUT SECTION GALLERY */
+    .about-page .about-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .about-page .about-gallery img {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 5px solid #8fb3d9;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .about-page .about-gallery img:hover {
+      transform: scale(1.06);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+      border-color: #7aa7d4;
+    }
+
+    /* LIGHTBOX EFFECT */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+
+    .lightbox.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+      animation: zoomIn 0.3s ease;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .about-page .about-gallery img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .about-page .about-gallery img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body class="about-page">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Ethan.</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="experience.html">Experiences</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about-detail">
+    <div class="container">
+      <h1 data-aos="fade-up">About Me</h1>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Hi, I’m <strong>Ethan Philip De Souza</strong> — a Data Analyst and Developer passionate about uncovering insights from data and building digital solutions that make a difference.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Beyond analytics and web development, my journey across different schools and cities has shaped how I think, create, and grow — constantly learning and evolving.
+      </p>
+
+      <!-- PERSONAL GALLERY -->
+      <div class="about-gallery" data-aos="fade-up" data-aos-delay="300">
+        <img src="D189E32C-779D-467C-86BE-735FC19B4C08.JPG" alt="Ethan portrait 1">
+        <img src="59B554FE-4E5F-4647-8E86-923CC0C0EFFF_1_102_o.jpeg" alt="Ethan portrait 2">
+        <img src="A7E722A4-5684-4E26-8E2B-D18971BC67B3_1_105_c.jpeg" alt="Ethan portrait 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION JOURNEY -->
+  <section class="section timeline">
+    <div class="container">
+      <h2 data-aos="fade-right">My Education Journey</h2>
+
+      <!-- 1. Han Ming → Pay Fong 2 -->
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-text">
+          <h3>2014 — Han Ming (Puchong) → Pay Fong 2 (Malacca)</h3>
+          <p>My journey begins in 2014, when I transferred from Han Ming Puchong to Pay Fong 2 in Malacca. It was a challenging transition — new place, new friends, and a completely new environment — but I adapted, grew stronger, and made lasting friendships and experiences that shaped me into who I am today.</p>
+        </div>
+        <div class="timeline-gallery">
+          <img src="Screenshot-2023-11-27-163235.png" alt="Han Ming School">
+          <img src="Payfong2pic.jpg" alt="Pay Fong 2 School">
+          <img src="9BAAC2FF-5F86-4738-AEB9-D4B01F40CB6E_1_105_c.jpeg" alt="Malacca City">
+          <img src="CDBC9E7A-697C-4063-AF32-1E760573A18B_1_105_c.jpeg" alt="Malaccan Friends">
+          <img src="98B8D0A8-1AF8-4E0F-BECE-ABB630D61E10_1_105_c.jpeg" alt="Malaccan Friends">
+        </div>
+      </div>
+
+      <!-- 2. High School (SFI) -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-text">
+          <h3>High School — St. Francis Institution (2017)</h3>
+          <p>Entering high school, I met many new people and grew even closer to my friends from Pay Fong 2. Subjects became more challenging but also more meaningful. It was during this time that I discovered my passion for coding and analytics — which ultimately inspired me to pursue Data Science as my path.</p>
+        </div>
+        <div class="timeline-gallery">
+          <img src="SFI.jpg" alt="SFI School">
+          <img src="5FFF3952-36E9-4D7D-B6AA-E98480C82A4D_1_105_c.jpeg" alt="Classmates at SFI">
+          <img src="E493E5DB-1C21-4022-9B59-011FB406EEDC_1_105_c.jpeg" alt="School Event at SFI">
+          <img src="IMG_2451.jpeg" alt="Second School Event at SFI">
+        </div>
+      </div>
+
+      <!-- 3. Sunway University -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-text">
+          <h3>Sunway University — ADTP Program (2022)</h3>
+          <p>My time at Sunway University truly shaped my academic and personal journey. During my ADTP studies, I made the major decision to switch from Computer Science to Data Science — a choice that aligned perfectly with my growing interest in analytics and development. I also met incredible friends and mentors who shared the same goal of studying abroad, forming bonds that extended across different states and universities.</p>
+        </div>
+        <div class="timeline-gallery">
+          <img src="sunway_School_puc.jpg" alt="Sunway University">
+          <img src="156C022F-8101-4264-B7E7-5011DD593D94_1_105_c.jpeg" alt="Sunway Friends">
+          <img src="2DA77FC1-0A9B-48DE-A105-101C21D555C9_4_5005_c.jpeg" alt="Sunway Friends">
+          <img src="F0EF34AF-F71D-4E99-AF39-73CFCDAFBCA3_1_105_c.jpeg" alt="Sunway Graduation">
+          <img src="IMG_8343.jpeg" alt="Sunway Graduation 2">
+        </div>
+      </div>
+
+      <!-- 4. San José State University -->
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="timeline-text">
+          <h3>San José State University (Fall 2024)</h3>
+          <p>San José State University — Bachelor’s in Data Science (Fall 2024). San José State University is my next big step — where I’ll be pursuing my Bachelor’s in Data Science starting Fall 2024. I’m thrilled for the opportunities, challenges, and growth that lie ahead as I continue my journey in data analysis and development, this time in an entirely new country. During my time here, I’ve met both new friends and familiar faces from Sunway — reconnecting with old bonds and creating unforgettable new memories. I’ve also found a great community through badminton, where I’ve met amazing people and shared countless enjoyable moments. My experience at SJSU has already become an inspiring chapter in my academic and personal journey.</p>
+        </div>
+        <div class="timeline-gallery">
+          <img src="ADV_about-sjsu_2.jpg" alt="San José State University">
+          <img src="5B9FBFF4-A41D-427A-8424-B0F33CB338F9.JPG" alt="Friends at SJSU">
+          <img src="05D7DAAB-FCD9-48F4-A69A-A590DA46CFBF.JPG" alt="SJSU Campus">
+          <img src="4B555F40-FCF7-473F-BA41-27F0B0670620.JPG" alt="Badminton Group">
+          <img src="825F05A3-8EBF-4387-829C-7B73FE1F13EB.JPG" alt="University Event">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Zoomed Image">
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container foot-inner">
+      <span>&copy; <span id="year"></span> Ethan Philip De Souza</span>
+      <div class="socials">
+        <a href="https://www.instagram.com/pds_ethan" target="_blank">IG</a>
+        <a href="https://github.com" target="_blank">GH</a>
+        <a href="https://linkedin.com" target="_blank">LI</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    AOS.init({ duration: 1000, once: true });
+
+    // LIGHTBOX FUNCTION
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+
+    document.querySelectorAll(".about-gallery img, .timeline-gallery img").forEach(img => {
+      img.addEventListener("click", () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add("active");
+      });
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.classList.remove("active");
+    });
+  </script>
+</body>
+</html>

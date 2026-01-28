@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Ethan De Souza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Ethan.</a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="experience.html">Experiences</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section projects-page">
+    <div class="container">
+      <h1 data-aos="fade-right">Projects</h1>
+      <div class="grid">
+        <div class="card" data-aos="fade-up">
+          <img src="Project1.jpg" alt="Nutrition Tracker App">
+          <h3>Nutrition & Fitness Tracker</h3>
+          <p>Full-stack web app for logging meals and workouts with real-time calorie tracking and personalized insights.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
+          <img src="Project2.jpg" alt="Data Visualization Dashboard">
+          <h3>Data Visualization Dashboard</h3>
+          <p>Interactive dashboard built with Python, Plotly, and Dash for real-time financial and performance analytics.</p>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <img src="Project3.jpg" alt="Machine Learning Model">
+          <h3>Wimbledon Match Predictor</h3>
+          <p>ML model predicting tennis match outcomes based on player statistics and performance features.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <span>&copy; <span id="year"></span> Ethan De Souza</span>
+      <div class="socials">
+        <a href="https://github.com" target="_blank">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
