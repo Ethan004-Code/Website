@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Ethan De Souza</title>
+  <meta name="description" content="Learn more about Ethan De Souza, his background, skills, and approach to analytics and development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Ethan.</a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experiences</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container about-wrap" data-aos="fade-up">
+        <div class="about-text">
+          <h1>About Me</h1>
+          <p>
+            I’m Ethan, a data analyst and developer who enjoys turning complex information into accessible insights and polished digital products.
+          </p>
+          <p class="muted">
+            My work blends analytics, storytelling, and front-end development to create thoughtful experiences that are both useful and visually clear.
+          </p>
+          <div class="cta-row" style="margin-top: 20px;">
+            <a href="projects.html" class="btn btn-primary">See My Projects</a>
+            <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="about-cards">
+          <div class="stat" data-aos="zoom-in" data-aos-delay="100">
+            <strong>5+</strong>
+            <span>Years building</span>
+          </div>
+          <div class="stat" data-aos="zoom-in" data-aos-delay="200">
+            <strong>10+</strong>
+            <span>Projects shipped</span>
+          </div>
+          <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+            <strong>∞</strong>
+            <span>Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container" data-aos="fade-up">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; align-items: start;">
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="images/IMG_2135.jpeg" alt="Ethan De Souza by the ocean" style="width:100%; height:260px; object-fit:cover; display:block;" />
+            <div class="card-meta">
+              <h3>Profile</h3>
+              <p>Focused on thoughtful analysis, clear visuals, and practical product development.</p>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="images/Picture1.jpg" alt="Ethan De Souza in a professional setting" style="width:100%; height:260px; object-fit:cover; display:block;" />
+            <div class="card-meta">
+              <h3>Background</h3>
+              <p>Experience spanning data analysis, web development, research, and presentation design.</p>
+            </div>
+          </div>
+
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <img src="images/Project.jpg" alt="Portfolio project preview" style="width:100%; height:260px; object-fit:cover; display:block;" />
+            <div class="card-meta">
+              <h3>Approach</h3>
+              <p>Combining technical skill with user-focused thinking to build meaningful work.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <span>&copy; <span id="year"></span> Ethan De Souza</span>
+      <div class="socials">
+        <a href="https://github.com/Ethan004-Code" target="_blank" rel="noopener noreferrer">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    if (typeof AOS !== 'undefined') {
+      AOS.init({ duration: 700, once: true });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
