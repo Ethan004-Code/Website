@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Food Nutrition App Demo — Ethan De Souza</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Ethan.</a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experiences</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section demo-page">
+      <div class="container demo-card">
+
+        <a class="back-button" href="projects.html">
+          ← Back to Projects
+        </a>
+
+        <h1>Food Nutrition App Demo</h1>
+
+        <p class="muted">
+          Explore sample nutrition data by category, calories, protein, carbs, and search terms.
+          This static demo previews the logic of the full React + Flask food tracking app.
+        </p>
+
+        <div id="demo-status" class="demo-status">
+          Loading Food Nutrition demo...
+        </div>
+
+        <div class="olympics-filters">
+          <div class="filter-control">
+            <label for="category-filter">Category</label>
+            <select id="category-filter">
+              <option value="">All</option>
+            </select>
+          </div>
+
+          <div class="filter-control">
+            <label for="sort-select">Sort By</label>
+            <select id="sort-select">
+              <option value="name">Name</option>
+              <option value="calories">Calories</option>
+              <option value="protein">Protein</option>
+              <option value="carbs">Carbs</option>
+              <option value="fat">Fat</option>
+            </select>
+          </div>
+
+          <div class="filter-control">
+            <label for="search-input">Search Food</label>
+            <input id="search-input" type="search" placeholder="Search food name..." />
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span>Total foods</span>
+            <strong id="summary-count">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Avg calories</span>
+            <strong id="summary-calories">0</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Avg protein</span>
+            <strong id="summary-protein">0g</strong>
+          </div>
+
+          <div class="stat-card">
+            <span>Avg carbs</span>
+            <strong id="summary-carbs">0g</strong>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Food</th>
+                <th>Category</th>
+                <th>Calories</th>
+                <th>Protein</th>
+                <th>Carbs</th>
+                <th>Fat</th>
+              </tr>
+            </thead>
+
+            <tbody id="results-body">
+              <tr>
+                <td id="table-empty" colspan="6">
+                  Loading food data...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="js/food-app.js"></script>
+</body>
+</html>
