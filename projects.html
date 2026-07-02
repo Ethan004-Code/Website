@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Projects — Ethan De Souza</title>
+
   <link rel="stylesheet" href="style.css" />
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -12,50 +15,300 @@
   <header class="navbar">
     <div class="nav-inner">
       <a class="logo" href="index.html">Ethan.</a>
+
       <nav class="nav-links">
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="experience.html">Experiences</a>
+        <a href="projects.html" class="active">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <section class="section projects-page">
-    <div class="container">
-      <h1 data-aos="fade-right">Projects</h1>
-      <div class="grid">
-        <div class="card" data-aos="fade-up">
-          <img src="Project1.jpg" alt="Nutrition Tracker App">
-          <h3>Nutrition & Fitness Tracker</h3>
-          <p>Full-stack web app for logging meals and workouts with real-time calorie tracking and personalized insights.</p>
+  <main>
+    <section class="section projects-page">
+      <div class="container">
+
+        <div class="section-head">
+          <div>
+            <h1 data-aos="fade-right">Projects</h1>
+            <p class="muted" data-aos="fade-left">
+              Project hub: explore interactive demos, research reports, and source code.
+            </p>
+          </div>
         </div>
 
-        <div class="card" data-aos="fade-up" data-aos-delay="100">
-          <img src="Project2.jpg" alt="Data Visualization Dashboard">
-          <h3>Data Visualization Dashboard</h3>
-          <p>Interactive dashboard built with Python, Plotly, and Dash for real-time financial and performance analytics.</p>
+        <div class="project-section" data-aos="fade-up">
+          <h2>Interactive Demo Projects</h2>
+
+          <div class="grid project-grid">
+
+            <article class="card project-card" data-aos="fade-up">
+              <div class="card-media">
+                <img
+                  src="images/project-olympics.png"
+                  alt="Olympics Dataset Explorer"
+                  onerror="this.style.display='none'; this.closest('.card-media').classList.add('no-image');"
+                />
+                <div class="placeholder">Olympics Dataset Explorer</div>
+              </div>
+
+              <div class="card-meta">
+                <h3>Olympics Dataset Explorer</h3>
+
+                <p>
+                  Interactive explorer for Olympic athlete, sport, and medal data with filters and analytics.
+                </p>
+
+                <div class="project-stack">
+                  HTML • CSS • JavaScript • CSV • Data Analysis
+                </div>
+
+                <div class="project-buttons">
+                  <a
+                    class="btn btn-card"
+                    href="https://www.notion.so/Interactive-Olympic-Medals-Dashboard-SQL-Python-22b1af52acb2806099a4ca687eb23f8b?pvs=21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Notion Report
+                  </a>
+
+                  <a class="btn btn-card btn-primary" href="olympics.html">
+                    Try Live Demo
+                  </a>
+
+                  <a
+                    class="btn btn-card btn-outline"
+                    href="https://github.com/Ethan004-Code/Olympic_Stats"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-media">
+                <img
+                  src="images/project-food-app.png"
+                  alt="Food Nutrition App"
+                  onerror="this.style.display='none'; this.closest('.card-media').classList.add('no-image');"
+                />
+                <div class="placeholder">Food Nutrition App</div>
+              </div>
+
+              <div class="card-meta">
+                <h3>Food Nutrition App</h3>
+
+                <p>
+                  Nutrition lookup and calorie tracking app built with a React frontend and Flask API backend.
+                </p>
+
+                <div class="project-stack">
+                  React • Flask • Python • Nutrition Data
+                </div>
+
+                <div class="project-buttons">
+                  <a
+                    class="btn btn-card"
+                    href="https://www.notion.so/Food-Nutrition-App-2211af52acb2804a9577d70fd630b735?pvs=21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Notion Report
+                  </a>
+
+                  <a class="btn btn-card btn-primary" href="food-app.html">
+                    View Demo Page
+                  </a>
+
+                  <a
+                    class="btn btn-card btn-outline"
+                    href="https://github.com/Ethan004-Code/Food_nutrition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
         </div>
 
-        <div class="card" data-aos="fade-up" data-aos-delay="200">
-          <img src="Project3.jpg" alt="Machine Learning Model">
-          <h3>Wimbledon Match Predictor</h3>
-          <p>ML model predicting tennis match outcomes based on player statistics and performance features.</p>
+        <div class="project-section" data-aos="fade-up" data-aos-delay="100">
+          <h2>Research & Analysis Projects</h2>
+
+          <div class="grid project-grid">
+
+            <article class="card project-card" data-aos="fade-up">
+              <div class="card-media">
+                <img
+                  src="images/project-mental-health.png"
+                  alt="Mental Health Prediction"
+                  onerror="this.style.display='none'; this.closest('.card-media').classList.add('no-image');"
+                />
+                <div class="placeholder">Mental Health Prediction</div>
+              </div>
+
+              <div class="card-meta">
+                <h3>Mental Health Prediction</h3>
+
+                <p>
+                  Machine learning analysis for predicting mental health outcomes using behavioral datasets.
+                </p>
+
+                <div class="project-stack">
+                  ML • Python • Data Science
+                </div>
+
+                <div class="project-buttons">
+                  <a
+                    class="btn btn-card"
+                    href="https://www.notion.so/Mental-Health-Prediction-Machine-learning-2291af52acb28068bbfad8817cc69f72?pvs=21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Notion Report
+                  </a>
+
+                  <a
+                    class="btn btn-card btn-outline"
+                    href="https://github.com/Ethan004-Code/Mental_Health-Research"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-media">
+                <img
+                  src="images/project-star-wars.png"
+                  alt="Star Wars Analysis"
+                  onerror="this.style.display='none'; this.closest('.card-media').classList.add('no-image');"
+                />
+                <div class="placeholder">Star Wars Analysis</div>
+              </div>
+
+              <div class="card-meta">
+                <h3>Star Wars Analysis</h3>
+
+                <p>
+                  Exploratory visualizations and story pattern analysis derived from Star Wars dataset research.
+                </p>
+
+                <div class="project-stack">
+                  Python • Data Visualization
+                </div>
+
+                <div class="project-buttons">
+                  <a
+                    class="btn btn-card"
+                    href="https://www.notion.so/Star-Wars-analysis-2291af52acb280438bf8e8a38ed1d7e5?pvs=21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Notion Report
+                  </a>
+
+                  <a
+                    class="btn btn-card btn-outline"
+                    href="#"
+                    aria-disabled="true"
+                    title="GitHub link coming soon"
+                  >
+                    View GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-media">
+                <img
+                  src="images/project-bioinformatics.png"
+                  alt="Bioinformatics Final Project"
+                  onerror="this.style.display='none'; this.closest('.card-media').classList.add('no-image');"
+                />
+                <div class="placeholder">Bioinformatics Final Project</div>
+              </div>
+
+              <div class="card-meta">
+                <h3>Bioinformatics Final Project</h3>
+
+                <p>
+                  Course capstone project covering biological sequence analysis, modeling, and computational research.
+                </p>
+
+                <div class="project-stack">
+                  Bioinformatics • Python • Research
+                </div>
+
+                <div class="project-buttons">
+                  <a
+                    class="btn btn-card"
+                    href="https://www.notion.so/Bioinformatics-Final-project-2291af52acb2808baf77fa5e086ed469?pvs=21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Notion Report
+                  </a>
+
+                  <a
+                    class="btn btn-card btn-outline"
+                    href="https://github.com/Ethan004-Code/Bioinformatics_final"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View GitHub Code
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div>
         </div>
+
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container foot-inner">
       <span>&copy; <span id="year"></span> Ethan De Souza</span>
+
       <div class="socials">
-        <a href="https://github.com" target="_blank">GH</a>
+        <a href="https://github.com/Ethan004-Code" target="_blank" rel="noopener noreferrer">
+          GH
+        </a>
       </div>
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    if (typeof AOS !== "undefined") {
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    }
+
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
 </body>
 </html>
