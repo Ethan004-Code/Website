@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Ethan De Souza</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Ethan.</a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="experience.html">Experiences</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section contact-page">
+    <div class="container contact-card" data-aos="fade-up">
+      <a class="back-button" href="index.html">← Back to Home</a>
+      <h1>Contact Me</h1>
+      <p class="muted">Want to collaborate, ask a question, or see more work? Send a message below.</p>
+      <div class="contact-details">
+        <p><strong>Email</strong></p>
+        <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p><strong>LinkedIn</strong></p>
+        <p><a href="https://linkedin.com" target="_blank" rel="noreferrer">linkedin.com</a></p>
+      </div>
+      <div class="contact-support">
+        <p>If you prefer, use the contact section on the homepage or reach out directly through email.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-inner">
+      <span>&copy; <span id="year"></span> Ethan De Souza</span>
+      <div class="socials">
+        <a href="https://instagram.com" target="_blank">IG</a>
+        <a href="https://github.com" target="_blank">GH</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
