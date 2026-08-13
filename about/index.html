@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — Ethan De Souza</title>
+
+  <!-- Fonts + AOS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Page-Specific Styles (kept inline) -->
+  <style>
+    /* TIMELINE GALLERY */
+    .about-page .timeline-gallery { display:flex; flex-wrap:wrap; gap:10px; justify-content:flex-start; align-items:center; margin-top:10px; }
+    .about-page .timeline-gallery img { width:200px; height:140px; object-fit:cover; border-radius:10px; border:3px solid #8fb3d9; box-shadow:0 2px 6px rgba(0,0,0,0.15); transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease; cursor:pointer; }
+    .about-page .timeline-gallery img:hover { transform:scale(1.05); border-color:#7aa7d4; box-shadow:0 4px 10px rgba(0,0,0,0.25); }
+    .about-page .about-gallery { display:flex; justify-content:center; gap:25px; margin-top:30px; flex-wrap:wrap; }
+    .about-page .about-gallery img { width:260px; height:260px; object-fit:cover; border-radius:14px; border:5px solid #8fb3d9; box-shadow:0 6px 12px rgba(0,0,0,0.25); transition:transform .3s ease, box-shadow .3s ease, border-color .3s ease; cursor:pointer; }
+    .about-page .about-gallery img:hover { transform:scale(1.06); box-shadow:0 8px 18px rgba(0,0,0,0.3); border-color:#7aa7d4; }
+    .lightbox { position:fixed; inset:0; background:rgba(0,0,0,0.8); display:flex; justify-content:center; align-items:center; visibility:hidden; opacity:0; transition:opacity .3s ease; z-index:9999; }
+    .lightbox.active { visibility:visible; opacity:1; }
+    .lightbox img { max-width:90%; max-height:90%; border-radius:10px; box-shadow:0 0 25px rgba(255,255,255,0.3); animation:zoomIn .3s ease; }
+    @keyframes zoomIn { from { transform:scale(0.9); opacity:0; } to { transform:scale(1); opacity:1; } }
+    @media (max-width:768px) { .about-page .about-gallery img { width:200px; height:200px; } }
+    @media (max-width:480px) { .about-page .about-gallery img { width:150px; height:150px; } }
+  </style>
+</head>
+
+<body class="about-page">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="/">Ethan Philip De Souza (梁书泽)</a>
+      <nav class="nav-links">
+        <a href="/">Home</a>
+        <a href="/experience/">Experiences</a>
+        <a href="/projects/">Projects</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about-detail">
+    <div class="container">
+      <h1 data-aos="fade-up">About Me</h1>
+      <p data-aos="fade-up" data-aos-delay="100">Hi, I’m <strong>Ethan Philip De Souza</strong> — a Data Analyst and Developer passionate about uncovering insights from data and building digital solutions that make a difference.</p>
+
+      <div class="about-gallery" data-aos="fade-up" data-aos-delay="300">
+        <img src="../images/profile/D189E32C-779D-467C-86BE-735FC19B4C08.JPG" alt="Ethan portrait 1">
+        <img src="../images/profile/59B554FE-4E5F-4647-8E86-923CC0C0EFFF_1_102_o.jpeg" alt="Ethan portrait 2">
+        <img src="../images/profile/A7E722A4-5684-4E26-8E2B-D18971BC67B3_1_105_c.jpeg" alt="Ethan portrait 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../script.js"></script>
+  <script>document.getElementById("year")?.textContent = new Date().getFullYear(); if (typeof AOS !== 'undefined') { AOS.init({ duration:700, once:true }); }</script>
+</body>
+</html>
