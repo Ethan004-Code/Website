@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RePlate</title>
+  <meta name="description" content="Share surplus groceries with neighbors, arrange a public pickup, and confirm completed handoffs.">
+  <meta name="theme-color" content="#F7F8F3">
+  <meta name="color-scheme" content="light">
+  <!-- Add to Home Screen -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="RePlate">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23315F45'/%3E%3Ctext x='9' y='29' fill='white' font-size='29' font-family='Georgia,serif'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Manrope:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="./new.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#discover" data-action="tab" data-tab="discover" aria-label="RePlate home">
+        <span class="brand-mark" aria-hidden="true">R</span><span>Re<strong>Plate</strong></span>
+      </a>
+      <nav class="topnav" id="topnav" aria-label="Main"></nav>
+      <div class="topbar-actions" id="topbar-actions"></div>
+    </div>
+  </header>
+
+  <div id="setup-banner" class="setup-banner" role="alert" hidden></div>
+
+  <main id="main" class="app">
+    <div id="view"></div>
+  </main>
+
+  <button class="fab" id="fab" type="button" data-action="go-share" hidden></button>
+
+  <nav class="tabbar" id="tabbar" aria-label="Main"></nav>
+
+  <div class="sheet-root" id="sheet-root" hidden>
+    <div class="scrim" data-action="close-sheet"></div>
+    <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title"></div>
+  </div>
+
+  <input id="photo-input" class="sr-only" type="file" accept="image/jpeg,image/png,image/webp" tabindex="-1" aria-hidden="true">
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script type="module" src="./new.js"></script>
+</body>
+</html>

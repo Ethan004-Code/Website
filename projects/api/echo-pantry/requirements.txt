@@ -1,0 +1,8 @@
+Flask>=3.0,<4
+flask-cors>=4.0,<7
+supabase>=2.0,<3
+ibm-watsonx-ai>=1.2,<2
+google-auth>=2.26,<3
+google-cloud-storage>=2.14,<4
+Pillow>=10,<14
+gunicorn>=22,<24
