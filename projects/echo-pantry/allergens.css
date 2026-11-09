@@ -1,0 +1,9 @@
+.allergen-field { padding: 14px 16px; }
+.allergen-help { margin: 0 0 10px; font-size: 13px; }
+.allergen-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.allergen-chip { font: inherit; font-size: 14px; min-height: 44px; padding: 8px 13px; border: 1px solid #b7c7bb; border-radius: 24px; background: var(--surface, #fff); color: var(--ink, #203b2e); cursor: pointer; }
+.allergen-chip[aria-pressed="true"] { background: var(--forest, #315d49); border-color: var(--forest, #315d49); color: #fff; }
+.allergen-chip:focus-visible { outline: 2px solid #315d49; outline-offset: 3px; }
+.allergen-other { display: flex; flex-direction: column; gap: 6px; margin-top: 12px; font-size: 14px; }
+.allergen-other input { width: 100%; min-width: 0; max-width: 100%; min-height: 44px; padding: 10px; border: 1px solid #b7c7bb; border-radius: 8px; font: inherit; }
+.allergen-other input:focus { border-color: var(--forest, #315d49); outline: none; box-shadow: 0 0 0 2px rgba(49, 95, 69, .16); }

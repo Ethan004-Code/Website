@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "RePlate"
+description = "Community surplus food exchanges and giveaways, with reviewed Bob interpretation, safe matching, and confirmed impact."
+version = "1.0.0"
+id = "artifacts/echopantry"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 21543
+
+[services.development]
+run = "pnpm --filter @workspace/echopantry run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/echopantry", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/echopantry/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "21543"
+BASE_PATH = "/"

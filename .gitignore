@@ -1,0 +1,15 @@
+# Local secrets and environments
+**/.env
+**/.env.*
+!**/.env.example
+**/.venv/
+
+# Generated dependencies and builds
+**/node_modules/
+**/dist/
+**/__pycache__/
+**/*.pyc
+
+# macOS metadata
+.DS_Store
+**/.DS_Store

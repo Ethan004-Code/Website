@@ -3,52 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contact — Ethan De Souza</title>
+
+  <meta
+    name="description"
+    content="Contact Ethan Philip De Souza for analytics, data science, development, and professional opportunities."
+  >
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- AOS -->
+  <link
+    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    rel="stylesheet"
+  >
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="contact-body">
+
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="nav-inner">
-      <a class="logo" href="/">Ethan.</a>
+
+      <a class="logo" href="/">
+        Ethan Philip De Souza (梁书泽)
+      </a>
+
       <nav class="nav-links">
         <a href="about.html">About</a>
         <a href="experience.html">Experiences</a>
         <a href="projects.html">Projects</a>
       </nav>
+
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </div>
   </header>
 
-  <section class="section contact-page">
-    <div class="container contact-card" data-aos="fade-up">
-      <a class="back-button" href="/">← Back to Home</a>
-      <h1>Contact Me</h1>
-      <p class="muted">Want to collaborate, ask a question, or see more work? Send a message below.</p>
-      <div class="contact-details">
-        <p><strong>Email</strong></p>
-        <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p><strong>LinkedIn</strong></p>
-        <p><a href="https://linkedin.com" target="_blank" rel="noreferrer">linkedin.com</a></p>
-      </div>
-      <div class="contact-support">
-        <p>If you prefer, use the contact section on the homepage or reach out directly through email.</p>
-      </div>
-    </div>
-  </section>
+  <!-- CONTACT -->
+  <main>
 
-  <footer class="footer">
-    <div class="container foot-inner">
-      <span>&copy; <span id="year"></span> Ethan De Souza</span>
-      <div class="socials">
-        <a href="https://instagram.com" target="_blank">IG</a>
-        <a href="https://github.com" target="_blank">GH</a>
+    <section class="section contact-page">
+
+      <div
+        class="container contact-card"
+        data-aos="fade-up"
+      >
+
+        <!-- Back -->
+        <a
+          class="back-button contact-back"
+          href="/"
+        >
+          ← Back to Home
+        </a>
+
+        <!-- Heading -->
+        <h1>
+          Contact Me
+        </h1>
+
+        <!-- Contact Information -->
+        <div class="contact-details">
+
+          <!-- Email -->
+          <a
+            class="contact-link"
+            href="mailto:ethanphilipdesouza@gmail.com"
+          >
+            <span class="contact-label">
+              Email
+            </span>
+
+            <span class="contact-value">
+              ethanphilipdesouza@gmail.com
+            </span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/ethanpds"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span class="contact-label">
+              LinkedIn
+            </span>
+
+            <span class="contact-value">
+              linkedin.com/in/ethanpds
+            </span>
+          </a>
+
+        </div>
+
+        <!-- Bottom Message -->
+        <div class="contact-support">
+          <p>
+            If you prefer, use the contact section on the homepage
+            or reach out directly through email.
+          </p>
+        </div>
+
       </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container foot-inner">
+
+      <span>
+        &copy; <span id="year"></span> Ethan De Souza
+      </span>
+
+      <div class="socials">
+
+        <a
+          href="https://www.linkedin.com/in/ethanpds"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a href="mailto:ethanphilipdesouza@gmail.com">
+          Email
+        </a>
+
+        <a
+          href="https://ethandesouza.org"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Website
+        </a>
+
+      </div>
+
     </div>
+
   </footer>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    if (typeof AOS !== "undefined") {
+      AOS.init({
+        duration: 700,
+        once: true
+      });
+    }
+  </script>
+
 </body>
 </html>
